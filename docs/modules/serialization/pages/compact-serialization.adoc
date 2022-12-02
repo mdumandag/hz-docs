@@ -433,12 +433,11 @@ Go::
 +
 --
 [source,go]
+----
 type Employee struct {
     ID int64
-    Name string
+    Name *string
 }
-----
-
 ----
 --
 
@@ -1221,7 +1220,7 @@ Go::
 ----
 type Employee struct {
     ID int64
-    Name string
+    Name *string
 }
 ----
 --
@@ -1305,7 +1304,7 @@ Go::
 ----
 type Employee struct {
     ID int64
-    Name string
+    Name *string
     Age int32 // Newly added field
 }
 
